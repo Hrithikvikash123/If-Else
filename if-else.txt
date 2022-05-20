@@ -22,3 +22,46 @@ public class Main {
                         
         }
 }
+
+----------------------------------------------------------------------------------------------------------
+     2. Next - Question ( baed on if-else statement)
+     
+     if any Student whose percentage in current class greater than 30 then -> pass
+     
+     if any Student whose percentage in current class less than 30 then   -> fail
+    
+     
+     
+   package com.company;
+   import java.util.Scanner;
+
+        public class Main {
+        
+              public static void main(String[] args) {
+     
+                Scanner sc = new Scanner(System.in);
+                
+                System.out.print("Enter the sub1 marks is :");
+                int a = sc.nextInt();
+                
+                System.out.print("Enter the sub2 marks is :");
+                int b = sc.nextInt();
+                
+                System.out.print("Enter the sub3 marks is :");
+                int c = sc.nextInt();
+                
+                int result = a + b + c;
+                int per = (result * 100) / 300;
+                
+                if (per >= 30) {
+                        System.out.print("Student is pass");
+                } else {
+                        System.out.print("Student is fail");       // you can aslo use println 
+                }
+        }
+}
+
+//   Note -> println is used for goto the next line . 
+
+
+ 
